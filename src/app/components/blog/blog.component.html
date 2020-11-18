@@ -1,0 +1,18 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let blogs of userBlogs">
+            <div class="card">
+                <img src="assets/images/pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="author">
+                        <span>{{ blogs.date | date:'MMMM d, y' }}</span>
+                        <span>&ensp;{{ blogs.author }}</span>
+                    </div>
+                    <h5 class="card-title">{{ blogs.title }}</h5>
+                    <p class="card-text">{{ blogs.text }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
